@@ -176,14 +176,11 @@ nav {
 .person {
     height: 100vh;
 }
-
 h4 {
     font-weight: bold;
     font-size: 1.6rem;
     text-align: center;
     padding-bottom: 6%;
-    
-
 }
 //---PORTFOLIO 開始---//
 .portfolio {
@@ -287,92 +284,148 @@ h4 {
 .skill {
     background: #F2F2F2;
     &.fixed {
-        padding-top: 63px;;
+        padding-top: 63px;
      }
     ul {
+        p {
+            font-size: 1rem; 
+            width: 50%;
+            display: inline-block;
+            text-align: center;
+        }
         li {
             width: 50%;
             display: inline-block;
             text-align: center;
-            p {
-                font-size: 1rem; 
-                &.icon{
-                    &-education:before {
-                        content: 'url(../img/education.png)';
+            &.web_area {
+                position: relative;
+                padding-bottom: 35%;
+                .html5,.css3,.jquery,.sass,.github {
+                    position: absolute;
+                    width: 20%;
+                    padding-bottom: 20%;
+                    transform: rotate(0deg) scale(1);
+                    transition: 1s;
+                    opacity: 0.6;
+                    animation-name: action1;
+                    animation-duration: 1.5s;
+                    animation-iteration-count: infinite;
+                    transition: 0.3s;
+                    cursor: pointer;
+                    &.html5 {
+                        top: 0;
+                        left: 50%;
+                        margin-top: 10%;
+                        transform:rotate(0deg) translateX(-50%) scale(1);
+                        background: url(../img/html5.png)no-repeat center;
+                        background-size: 80%;
+                    }
+                    &.css3 {
+                        top: 0;
+                        left: 20%;
+                        margin-top: 25%;
+                        background: url(../img/css3.png)no-repeat center;
+                        background-size: 80%;
+                    }
+                    &.jquery {
+                        top: 0;
+                        left: 30%;
+                        margin-top: 45%;
+                        background: url(../img/jquery.png)no-repeat center;
+                        background-size: 80%;
+                    }
+                    &.sass {
+                        top: 0;
+                        right: 30%;
+                        margin-top: 45%;
+                        background: url(../img/sass.png)no-repeat center;
+                        background-size: 80%;
+                    }
+                    &.github {
+                        top: 0;
+                        right: 20%;
+                        margin-top: 25%;
+                        background: url(../img/github-1.png)no-repeat center;
+                        background-size: 80%;
+                    }
+                }
+                &:hover {
+                    .html5,.css3,.jquery,.sass,.github {
+                        opacity: 1;
+                        transform: rotate(720deg) scale(1.2);
+                        &.html5 {
+                            transform: rotate(720deg) translateX(-50%) scale(1.2);
+                        }
+                        &.css3 {
+                            left: 15%;
+                        }
+                        &.github {
+                            right: 15%;
+                        }
+                        &.sass {
+                            right: 25%;
+                            margin-top: 50%;
+                        }
+                        &.jquery {
+                            left:25%;
+                            margin-top: 50%;
+                        }
                     }
                 }
             }
-            ol {
-                width: 100%;
-                display: inline-block;
-                text-align: center;
-                font-size: 0;
-                margin: 30% 0;
-                &.chart_WebSeries {
-                    li {
-                        width: 20%;
-                        padding-bottom: 20%;
-                        display: inline-block;
-                        &.action {
-                            animation-name: action;
-                            animation-duration: 1.5s;
-                            animation-iteration-count: 1;
-                        }
-                        &.html5 {
-                            background: url(../img/html-5.png)no-repeat center;
-                            background-size: 80%;
-                            animation-delay: 0;
-                        }
-                        &.css3 {
-                            background: url(../img/css3.png)no-repeat center;
-                            background-size: 80%;
-                            animation-delay: 0.2s;
-                        }
-                        &.jquery {
-                            background: url(../img/jquery.png)no-repeat center;
-                            background-size: 80%;
-                            animation-delay: 0.4s;
-                        }
-                        &.sass {
-                            background: url(../img/sass.png)no-repeat center;
-                            background-size: 80%;
-                            animation-delay: 0.6s;
-                        }
-                        &.gihub {
-                            background: url(../img/github-1.png)no-repeat center;
-                            background-size: 80%;
-                            animation-delay: 0.8s;
-                        }
+            &.office_area {
+                position: relative;
+                padding-bottom: 35%;
+                .word,.excel,.ppt {
+                    position: absolute;
+                    width: 21%;
+                    padding-bottom: 21%;
+                    display: inline-block;
+                    transform: rotate(0deg) scale(1);
+                    transition: 1s;
+                    opacity: 0.6; 
+                    animation-name: action;
+                    animation-duration: 1.5s;
+                    animation-iteration-count: infinite;
+                    transition: 0.3s;
+                    cursor: pointer;
+                    &.word {
+                        background: url(../img/word.png)no-repeat center;
+                        background-size: 80%;
+                        top: 0;
+                        margin-top: 15%;
+                        left: 50%;
+                        transform:rotate(0deg) translateX(-50%) scale(1);
+                    }
+                    &.excel {
+                        background: url(../img/excel.png)no-repeat center;
+                        background-size: 80%;
+                        top: 0;
+                        margin-top: 35%;
+                        left: 25%;
+                    }
+                    &.ppt {
+                        background: url(../img/powerpoint.png)no-repeat center;
+                        background-size: 80%;
+                        top: 0;
+                        margin-top: 35%;
+                        right: 25%;
                     }
                 }
-                &.chart-OfficeSeries {
-                    li {
-                        width: 21%;
-                        padding-bottom: 21%;
-                        display: inline-block;
-                        margin-left: 8%;
-                        &:last-child {
-                            margin-right: 8%;
-                        }
-                        &.action1 {
-                            animation-name: action1;
-                            animation-duration: 1.5s;
-                            animation-iteration-count: 1;
-                        }
+                &:hover {
+                    .word,.excel,.ppt {
+                        opacity: 1;
+                        transform: rotate(720deg) scale(1.2);
                         &.word {
-                            background: url(../img/word.png)no-repeat center;
-                            background-size: 80%;
-                            animation-delay: 0s;
+                            transform:rotate(720deg) translateX(-50%) scale(1.2);
                         }
                         &.excel {
-                            background: url(../img/excel.png)no-repeat center;
-                            background-size: 80%;
-                            animation-delay: 0.3s;
+                            margin-top: 40%;
+                            left: 15%;
                         }
                         &.ppt {
-                            background: url(../img/powerpoint.png)no-repeat center;
-                            background-size: 80%;
-                            animation-delay: 0.6s;
+                            margin-top: 40%;
+                            right: 15%;
                         }
                     }
                 }
@@ -394,12 +447,23 @@ h4 {
         margin: 1% 4% 1% 6%;
         .photo {
             width: 100%;
-            padding-bottom: 80%;
-            background: url(../img/photo.jpg)no-repeat center;
-            background-size: cover;
-            border-radius: 20px;
+            overflow: hidden;
+            border-radius: 20px; 
+            transition: 0.3s;
+            cursor: pointer;
+            .photobackgroud {
+                padding-bottom: 80%;
+                background: url(../img/photo.jpg)no-repeat center;
+                background-size: cover;
+                background-color: #fff;
+                border-radius: 20px; 
+                transition: 0.3s;
+            }
             &:hover {
-                background-size: 120%; 
+                .photobackgroud {
+                    transform: scale(1.3);
+                    opacity: 0.8;
+                }
             }
         }
         .imformation {

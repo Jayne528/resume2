@@ -108,71 +108,35 @@ html {
 
 @-webkit-keyframes action {
   0% {
-    -webkit-transform: translate(20px) rotate(-5deg) scale(0.8);
-    transform: translate(20px) rotate(-5deg) scale(0.8); }
-  25% {
-    -webkit-transform: translate(20px) rotate(-5deg) scale(0.8);
-    transform: translate(20px) rotate(-5deg) scale(0.8); }
+    opacity: 0.5; }
   50% {
-    -webkit-transform: translate(20px) rotate(-5deg) scale(0.8);
-    transform: translate(20px) rotate(-5deg) scale(0.8); }
-  75% {
-    -webkit-transform: translate(20px) rotate(-5deg) scale(0.8);
-    transform: translate(20px) rotate(-5deg) scale(0.8); }
+    opacity: 1; }
   100% {
-    -webkit-transform: translate(20px) rotate(-5deg) scale(0.8);
-    transform: translate(20px) rotate(-5deg) scale(0.8); } }
+    opacity: 0.5; } }
 
 @keyframes action {
   0% {
-    -webkit-transform: translate(20px) rotate(-5deg) scale(0.8);
-    transform: translate(20px) rotate(-5deg) scale(0.8); }
-  25% {
-    -webkit-transform: translate(20px) rotate(-5deg) scale(0.8);
-    transform: translate(20px) rotate(-5deg) scale(0.8); }
+    opacity: 0.5; }
   50% {
-    -webkit-transform: translate(20px) rotate(-5deg) scale(0.8);
-    transform: translate(20px) rotate(-5deg) scale(0.8); }
-  75% {
-    -webkit-transform: translate(20px) rotate(-5deg) scale(0.8);
-    transform: translate(20px) rotate(-5deg) scale(0.8); }
+    opacity: 1; }
   100% {
-    -webkit-transform: translate(20px) rotate(-5deg) scale(0.8);
-    transform: translate(20px) rotate(-5deg) scale(0.8); } }
+    opacity: 0.5; } }
 
 @-webkit-keyframes action1 {
   0% {
-    -webkit-transform: translate(20px) rotate(5deg) scale(0.8);
-    transform: translate(20px) rotate(5deg) scale(0.8); }
-  25% {
-    -webkit-transform: translate(20px) rotate(5deg) scale(0.8);
-    transform: translate(20px) rotate(5deg) scale(0.8); }
+    opacity: 1; }
   50% {
-    -webkit-transform: translate(20px) rotate(5deg) scale(0.8);
-    transform: translate(20px) rotate(5deg) scale(0.8); }
-  75% {
-    -webkit-transform: translate(20px) rotate(5deg) scale(0.8);
-    transform: translate(20px) rotate(5deg) scale(0.8); }
+    opacity: 0.5; }
   100% {
-    -webkit-transform: translate(20px) rotate(5deg) scale(0.8);
-    transform: translate(20px) rotate(5deg) scale(0.8); } }
+    opacity: 1; } }
 
 @keyframes action1 {
   0% {
-    -webkit-transform: translate(20px) rotate(5deg) scale(0.8);
-    transform: translate(20px) rotate(5deg) scale(0.8); }
-  25% {
-    -webkit-transform: translate(20px) rotate(5deg) scale(0.8);
-    transform: translate(20px) rotate(5deg) scale(0.8); }
+    opacity: 1; }
   50% {
-    -webkit-transform: translate(20px) rotate(5deg) scale(0.8);
-    transform: translate(20px) rotate(5deg) scale(0.8); }
-  75% {
-    -webkit-transform: translate(20px) rotate(5deg) scale(0.8);
-    transform: translate(20px) rotate(5deg) scale(0.8); }
+    opacity: 0.5; }
   100% {
-    -webkit-transform: translate(20px) rotate(5deg) scale(0.8);
-    transform: translate(20px) rotate(5deg) scale(0.8); } }
+    opacity: 1; } }
 
 @-webkit-keyframes shake {
   0% {
@@ -459,85 +423,152 @@ h4 {
   background: #F2F2F2; }
   .skill.fixed {
     padding-top: 63px; }
+  .skill ul p {
+    font-size: 1rem;
+    width: 50%;
+    display: inline-block;
+    text-align: center; }
   .skill ul li {
     width: 50%;
     display: inline-block;
     text-align: center; }
-    .skill ul li p {
-      font-size: 1rem; }
-      .skill ul li p.icon-education:before {
-        content: 'url(../img/education.png)'; }
-    .skill ul li ol {
-      width: 100%;
-      display: inline-block;
-      text-align: center;
-      font-size: 0;
-      margin: 30% 0; }
-      .skill ul li ol.chart_WebSeries li {
+    .skill ul li.web_area {
+      position: relative;
+      padding-bottom: 35%; }
+      .skill ul li.web_area .html5, .skill ul li.web_area .css3, .skill ul li.web_area .jquery, .skill ul li.web_area .sass, .skill ul li.web_area .github {
+        position: absolute;
         width: 20%;
         padding-bottom: 20%;
-        display: inline-block; }
-        .skill ul li ol.chart_WebSeries li.action {
-          -webkit-animation-name: action;
-          animation-name: action;
-          -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-          -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1; }
-        .skill ul li ol.chart_WebSeries li.html5 {
-          background: url(../img/html-5.png) no-repeat center;
-          background-size: 80%;
-          -webkit-animation-delay: 0;
-          animation-delay: 0; }
-        .skill ul li ol.chart_WebSeries li.css3 {
+        -webkit-transform: rotate(0deg) scale(1);
+        -ms-transform: rotate(0deg) scale(1);
+        transform: rotate(0deg) scale(1);
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s;
+        opacity: 0.6;
+        -webkit-animation-name: action1;
+        animation-name: action1;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        cursor: pointer; }
+        .skill ul li.web_area .html5.html5, .skill ul li.web_area .css3.html5, .skill ul li.web_area .jquery.html5, .skill ul li.web_area .sass.html5, .skill ul li.web_area .github.html5 {
+          top: 0;
+          left: 50%;
+          margin-top: 10%;
+          -webkit-transform: rotate(0deg) translateX(-50%) scale(1);
+          -ms-transform: rotate(0deg) translateX(-50%) scale(1);
+          transform: rotate(0deg) translateX(-50%) scale(1);
+          background: url(../img/html5.png) no-repeat center;
+          background-size: 80%; }
+        .skill ul li.web_area .html5.css3, .skill ul li.web_area .css3.css3, .skill ul li.web_area .jquery.css3, .skill ul li.web_area .sass.css3, .skill ul li.web_area .github.css3 {
+          top: 0;
+          left: 20%;
+          margin-top: 25%;
           background: url(../img/css3.png) no-repeat center;
-          background-size: 80%;
-          -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s; }
-        .skill ul li ol.chart_WebSeries li.jquery {
+          background-size: 80%; }
+        .skill ul li.web_area .html5.jquery, .skill ul li.web_area .css3.jquery, .skill ul li.web_area .jquery.jquery, .skill ul li.web_area .sass.jquery, .skill ul li.web_area .github.jquery {
+          top: 0;
+          left: 30%;
+          margin-top: 45%;
           background: url(../img/jquery.png) no-repeat center;
-          background-size: 80%;
-          -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s; }
-        .skill ul li ol.chart_WebSeries li.sass {
+          background-size: 80%; }
+        .skill ul li.web_area .html5.sass, .skill ul li.web_area .css3.sass, .skill ul li.web_area .jquery.sass, .skill ul li.web_area .sass.sass, .skill ul li.web_area .github.sass {
+          top: 0;
+          right: 30%;
+          margin-top: 45%;
           background: url(../img/sass.png) no-repeat center;
-          background-size: 80%;
-          -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s; }
-        .skill ul li ol.chart_WebSeries li.gihub {
+          background-size: 80%; }
+        .skill ul li.web_area .html5.github, .skill ul li.web_area .css3.github, .skill ul li.web_area .jquery.github, .skill ul li.web_area .sass.github, .skill ul li.web_area .github.github {
+          top: 0;
+          right: 20%;
+          margin-top: 25%;
           background: url(../img/github-1.png) no-repeat center;
-          background-size: 80%;
-          -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s; }
-      .skill ul li ol.chart-OfficeSeries li {
+          background-size: 80%; }
+      .skill ul li.web_area:hover .html5, .skill ul li.web_area:hover .css3, .skill ul li.web_area:hover .jquery, .skill ul li.web_area:hover .sass, .skill ul li.web_area:hover .github {
+        opacity: 1;
+        -webkit-transform: rotate(720deg) scale(1.2);
+        -ms-transform: rotate(720deg) scale(1.2);
+        transform: rotate(720deg) scale(1.2); }
+        .skill ul li.web_area:hover .html5.html5, .skill ul li.web_area:hover .css3.html5, .skill ul li.web_area:hover .jquery.html5, .skill ul li.web_area:hover .sass.html5, .skill ul li.web_area:hover .github.html5 {
+          -webkit-transform: rotate(720deg) translateX(-50%) scale(1.2);
+          -ms-transform: rotate(720deg) translateX(-50%) scale(1.2);
+          transform: rotate(720deg) translateX(-50%) scale(1.2); }
+        .skill ul li.web_area:hover .html5.css3, .skill ul li.web_area:hover .css3.css3, .skill ul li.web_area:hover .jquery.css3, .skill ul li.web_area:hover .sass.css3, .skill ul li.web_area:hover .github.css3 {
+          left: 15%; }
+        .skill ul li.web_area:hover .html5.github, .skill ul li.web_area:hover .css3.github, .skill ul li.web_area:hover .jquery.github, .skill ul li.web_area:hover .sass.github, .skill ul li.web_area:hover .github.github {
+          right: 15%; }
+        .skill ul li.web_area:hover .html5.sass, .skill ul li.web_area:hover .css3.sass, .skill ul li.web_area:hover .jquery.sass, .skill ul li.web_area:hover .sass.sass, .skill ul li.web_area:hover .github.sass {
+          right: 25%;
+          margin-top: 50%; }
+        .skill ul li.web_area:hover .html5.jquery, .skill ul li.web_area:hover .css3.jquery, .skill ul li.web_area:hover .jquery.jquery, .skill ul li.web_area:hover .sass.jquery, .skill ul li.web_area:hover .github.jquery {
+          left: 25%;
+          margin-top: 50%; }
+    .skill ul li.office_area {
+      position: relative;
+      padding-bottom: 35%; }
+      .skill ul li.office_area .word, .skill ul li.office_area .excel, .skill ul li.office_area .ppt {
+        position: absolute;
         width: 21%;
         padding-bottom: 21%;
         display: inline-block;
-        margin-left: 8%; }
-        .skill ul li ol.chart-OfficeSeries li:last-child {
-          margin-right: 8%; }
-        .skill ul li ol.chart-OfficeSeries li.action1 {
-          -webkit-animation-name: action1;
-          animation-name: action1;
-          -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-          -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1; }
-        .skill ul li ol.chart-OfficeSeries li.word {
+        -webkit-transform: rotate(0deg) scale(1);
+        -ms-transform: rotate(0deg) scale(1);
+        transform: rotate(0deg) scale(1);
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s;
+        opacity: 0.6;
+        -webkit-animation-name: action;
+        animation-name: action;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        cursor: pointer; }
+        .skill ul li.office_area .word.word, .skill ul li.office_area .excel.word, .skill ul li.office_area .ppt.word {
           background: url(../img/word.png) no-repeat center;
           background-size: 80%;
-          -webkit-animation-delay: 0s;
-          animation-delay: 0s; }
-        .skill ul li ol.chart-OfficeSeries li.excel {
+          top: 0;
+          margin-top: 15%;
+          left: 50%;
+          -webkit-transform: rotate(0deg) translateX(-50%) scale(1);
+          -ms-transform: rotate(0deg) translateX(-50%) scale(1);
+          transform: rotate(0deg) translateX(-50%) scale(1); }
+        .skill ul li.office_area .word.excel, .skill ul li.office_area .excel.excel, .skill ul li.office_area .ppt.excel {
           background: url(../img/excel.png) no-repeat center;
           background-size: 80%;
-          -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s; }
-        .skill ul li ol.chart-OfficeSeries li.ppt {
+          top: 0;
+          margin-top: 35%;
+          left: 25%; }
+        .skill ul li.office_area .word.ppt, .skill ul li.office_area .excel.ppt, .skill ul li.office_area .ppt.ppt {
           background: url(../img/powerpoint.png) no-repeat center;
           background-size: 80%;
-          -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s; }
+          top: 0;
+          margin-top: 35%;
+          right: 25%; }
+      .skill ul li.office_area:hover .word, .skill ul li.office_area:hover .excel, .skill ul li.office_area:hover .ppt {
+        opacity: 1;
+        -webkit-transform: rotate(720deg) scale(1.2);
+        -ms-transform: rotate(720deg) scale(1.2);
+        transform: rotate(720deg) scale(1.2); }
+        .skill ul li.office_area:hover .word.word, .skill ul li.office_area:hover .excel.word, .skill ul li.office_area:hover .ppt.word {
+          -webkit-transform: rotate(720deg) translateX(-50%) scale(1.2);
+          -ms-transform: rotate(720deg) translateX(-50%) scale(1.2);
+          transform: rotate(720deg) translateX(-50%) scale(1.2); }
+        .skill ul li.office_area:hover .word.excel, .skill ul li.office_area:hover .excel.excel, .skill ul li.office_area:hover .ppt.excel {
+          margin-top: 40%;
+          left: 15%; }
+        .skill ul li.office_area:hover .word.ppt, .skill ul li.office_area:hover .excel.ppt, .skill ul li.office_area:hover .ppt.ppt {
+          margin-top: 40%;
+          right: 15%; }
 
 .profile {
   background: #fff; }
@@ -550,12 +581,26 @@ h4 {
     margin: 1% 4% 1% 6%; }
     .profile .capital .photo {
       width: 100%;
-      padding-bottom: 80%;
-      background: url(../img/photo.jpg) no-repeat center;
-      background-size: cover;
-      border-radius: 20px; }
-      .profile .capital .photo:hover {
-        background-size: 120%; }
+      overflow: hidden;
+      border-radius: 20px;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      cursor: pointer; }
+      .profile .capital .photo .photobackgroud {
+        padding-bottom: 80%;
+        background: url(../img/photo.jpg) no-repeat center;
+        background-size: cover;
+        background-color: #fff;
+        border-radius: 20px;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+      .profile .capital .photo:hover .photobackgroud {
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+        opacity: 0.8; }
     .profile .capital .imformation {
       width: 100%; }
       .profile .capital .imformation p {

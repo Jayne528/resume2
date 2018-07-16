@@ -24,13 +24,9 @@ $(document).ready(function () {
         e.preventDefault();
         $(this).find('.icon').toggleClass('shake');  
     });
-    $('.chart_WebSeries').hover(function (e) { 
+    $('.web_area,.office_area').hover(function (e) { 
         e.preventDefault();
-        $(this).find('li').toggleClass('action');  
-    });
-    $('.chart-OfficeSeries').hover(function (e) { 
-        e.preventDefault();
-        $(this).find('li').toggleClass('action1');  
+        $(this).toggleClass('action');  
     });
     });
 
