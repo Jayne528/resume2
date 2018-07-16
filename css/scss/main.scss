@@ -1,0 +1,544 @@
+@import 'reset';
+@import 'config';
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 0;
+}
+//---header 開始---//
+
+header {
+    height: 100vh;
+    background: url(../img/Ocean.jpg)no-repeat center;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    & h4 {
+        font-size: 1.6rem;
+        color: #fff;
+        width: 70%;
+        text-align: center;
+        transition: 2s;
+        text-shadow: 5px 5px 10px #000;
+        cursor: pointer;
+        margin: 24% auto 0 auto;
+        &:hover {
+            transition: 1s;
+            font-size: 2.2rem;
+        }
+    }
+    .icon-a{
+        width: 100%;
+        text-align: center;
+        margin: 3% auto;
+        .icon {
+            width: 5%;
+            padding-bottom: 5%;
+            margin: 2%;
+            display: inline-block;
+            transition: 1s;
+            &.icon-fb {
+                background: url(../img/fb.png)no-repeat;
+                background-size: 100%;
+                &:hover {
+                    transform: rotate(360deg);
+                    transition: 1s;
+                    background-color: #4267B2;
+                    border-radius: 50%;    
+                }
+            }
+            &.icon-ig {
+                background: url(../img/ig.png)no-repeat;
+                background-size: 100%;
+                &:hover {
+                    transform: rotate(360deg);
+                    transition: 1s;
+                    background-color:#d047d1;
+                    border-radius: 50%;    
+                }
+            }
+            &.icon-github {
+                background: url(../img/github.png)no-repeat;
+                background-size: 100%;
+                &:hover {
+                    transform: rotate(360deg);
+                    transition: 1s;
+                    background-color: #6A2A87;
+                    border-radius: 50%;    
+                }
+            }
+        }
+    }
+    .downarrow{
+        display: block;
+        background: url(../img/down.png) no-repeat;
+        background-size: 100%;
+        padding-bottom: 5%;
+        width: 5%;
+        margin: 8% auto 0 auto;
+        cursor: pointer;
+        animation-name: downarrow;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
+//---header 結束---//
+
+//---nav 開始---//
+nav {
+    width: 100%;
+    background: #c3c3c3;
+    top: 0;
+    &.fixed {
+        position: fixed;
+        z-index: 998;
+    }
+    .container {
+        width: 80%;
+        font-size: 0;
+        & .home {
+            background: url(../img/home.png) no-repeat;
+            width: 3%;
+            padding-bottom: 3%;
+            background-size: 100%;
+            margin-left: 1%;
+            display: inline-block;
+            vertical-align: middle;
+            transition: 1s;
+            &:hover {
+                transition: 1s;
+            }
+        }
+        & .nav-menu {
+            display: inline-block;
+            text-align: right;
+            width: 96%;
+            vertical-align: middle;
+            & li {
+                position: relative;
+                display: inline-block;
+                font-weight: bold;
+                width: 13%;
+                text-align: center;
+                padding: 2% 0;
+                border-bottom: 4px solid rgba(255, 255, 255, 0);
+                // cursor: pointer;
+                transition: 0.3s;
+                a {
+                    display: block;
+                    &:before {
+                        content:'';
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        font-size: 0.6rem;
+                        color: #1f1f1f;
+                        z-index: 999;
+                    }
+                    &.nav-menu-a {
+                        &:before {
+                            content:'PORTFOLIO';    
+                        }
+                    }
+                    &.nav-menu-b {
+                        &:before {
+                            content:'SKILLS';  
+                        }
+                    }
+                    &.nav-menu-c {
+                        &:before {
+                            content:'PROFILE';
+                        }
+                    }
+                    &.nav-menu-d {
+                        &:before {
+                             content:'EXPERIENCE';  
+                        }
+                    } 
+                }
+                &:hover {
+                    border-bottom: 4px solid #0D68BE;
+                    transition: 0.3s;
+                    &:before {
+                        color: #0D68BE;
+                    }
+                } 
+            }
+        }
+    }
+}   
+//---nav 結束---//
+
+.person {
+    height: 100vh;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: center;
+    padding-bottom: 6%;
+    
+
+}
+//---PORTFOLIO 開始---//
+.portfolio {
+    background: #fff;
+    &.fixed {
+       padding-top: 63px;;
+    }
+    .demo li {
+        position: relative;
+        width: 31.33333%;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 1% 1%;
+        transition: 0.5s;
+        overflow: hidden;     
+        &:after {
+            opacity: 0;
+            position: absolute;
+            left: 50%;
+            transition: 0.3s;
+            content: '';
+            transform: translate(-50%,50%);
+            font-size: 0.8rem;
+            color: #fff;
+        }
+        &:hover {
+            transform: scale(1.1);
+            &:after {
+                opacity: 1;
+                transform: translate(-50%,-400%);
+
+            }
+        }
+        a {
+            display: block;
+            padding-bottom: 50%;
+            text-decoration: none;
+            margin: 0 auto;
+            text-align: center;
+            color: #fff;
+            border-radius: 5px;
+        }
+        &.demo1 {
+            a {
+                background: url(../img/1.png)no-repeat center;
+                background-size: 100%;
+            }
+            &:after {
+                content: 'Blizzard 毛玻璃';
+            }
+        }
+        &.demo2 {
+            a {   
+                background: url(../img/2.png)no-repeat center;
+                background-size: 100%;
+            }
+            &:after {
+                content: '登入頁 DEMO';
+            }
+        }
+        &.demo3 {
+            a{   
+                background: url(../img/3.png)no-repeat center;
+                background-size: 100%;
+            }
+            &:after {
+                content: '旅遊網站 DEMO';
+            }
+        }
+        &.demo4 {
+            a{ 
+                background: url(../img/4.png)no-repeat center;
+                background-size: 130%;
+            }
+            &:after {
+                content: '手機版登入頁';
+            }
+        }
+        &.demo5 {
+            a{   
+                background: url(../img/5.png)no-repeat center;
+                background-size: 100%;
+            }
+            &:after {
+                content: '履歷 DEMO';
+            }
+        }
+        &.demo6 {
+            a{
+                background: url(../img/6.png)no-repeat center;
+                background-size: 100%;
+            }
+            &:after {
+                content: '扭蛋 DEMO';
+            }
+        }
+    } 
+}
+//---PORTFOLIO 結束---// 
+//---SKILLS 開始---//
+.skill {
+    background: #F2F2F2;
+    &.fixed {
+        padding-top: 63px;;
+     }
+    ul {
+        li {
+            width: 50%;
+            display: inline-block;
+            text-align: center;
+            p {
+                font-size: 1rem; 
+                &.icon{
+                    &-education:before {
+                        content: 'url(../img/education.png)';
+                    }
+                }
+            }
+            ol {
+                width: 100%;
+                display: inline-block;
+                text-align: center;
+                font-size: 0;
+                margin: 30% 0;
+                &.chart_WebSeries {
+                    li {
+                        width: 20%;
+                        padding-bottom: 20%;
+                        display: inline-block;
+                        &.action {
+                            animation-name: action;
+                            animation-duration: 1.5s;
+                            animation-iteration-count: 1;
+                        }
+                        &.html5 {
+                            background: url(../img/html-5.png)no-repeat center;
+                            background-size: 80%;
+                            animation-delay: 0;
+                        }
+                        &.css3 {
+                            background: url(../img/css3.png)no-repeat center;
+                            background-size: 80%;
+                            animation-delay: 0.2s;
+                        }
+                        &.jquery {
+                            background: url(../img/jquery.png)no-repeat center;
+                            background-size: 80%;
+                            animation-delay: 0.4s;
+                        }
+                        &.sass {
+                            background: url(../img/sass.png)no-repeat center;
+                            background-size: 80%;
+                            animation-delay: 0.6s;
+                        }
+                        &.gihub {
+                            background: url(../img/github-1.png)no-repeat center;
+                            background-size: 80%;
+                            animation-delay: 0.8s;
+                        }
+                    }
+                }
+                &.chart-OfficeSeries {
+                    li {
+                        width: 21%;
+                        padding-bottom: 21%;
+                        display: inline-block;
+                        margin-left: 8%;
+                        &:last-child {
+                            margin-right: 8%;
+                        }
+                        &.action1 {
+                            animation-name: action1;
+                            animation-duration: 1.5s;
+                            animation-iteration-count: 1;
+                        }
+                        &.word {
+                            background: url(../img/word.png)no-repeat center;
+                            background-size: 80%;
+                            animation-delay: 0s;
+                        }
+                        &.excel {
+                            background: url(../img/excel.png)no-repeat center;
+                            background-size: 80%;
+                            animation-delay: 0.3s;
+                        }
+                        &.ppt {
+                            background: url(../img/powerpoint.png)no-repeat center;
+                            background-size: 80%;
+                            animation-delay: 0.6s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//---SKILLS 結束---//
+//---profile 開始---//
+.profile {
+    background: #fff;
+    &.fixed {
+        padding-top: 63px;;
+     }
+    .capital {
+        width: 30%;
+        display: inline-block;
+        vertical-align: top;
+        margin: 1% 4% 1% 6%;
+        .photo {
+            width: 100%;
+            padding-bottom: 80%;
+            background: url(../img/photo.jpg)no-repeat center;
+            background-size: cover;
+            border-radius: 20px;
+            &:hover {
+                background-size: 120%; 
+            }
+        }
+        .imformation {
+            width: 100%;
+            p {
+                font-size: 0.6rem;
+                margin: 4% 0;
+                font-weight: 500;
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .content {
+        width: 60%; 
+        display: inline-block;
+        vertical-align: top;
+        p {
+            font-size: 0.45rem;
+            margin: 2% 1%;
+            line-height: 0.6rem;
+            span {
+                font-size: 0.75rem;
+                font-weight: bold;
+            }
+        }
+    }
+}    
+//---profile 結束---//
+//---EXPERIENCE 開始---//
+.experience {
+    background-color: #F2F2F2;
+    &.fixed {
+        padding-top: 63px;;
+     }
+    .container {
+        width: 90%;
+        ul {
+            margin: 1% 0;
+            >li {
+                width: 23%;
+                display: inline-block;
+                margin-left: 1%;
+                background-color: #e4e4e4;
+                padding: 1%;
+                border: 1px solid #fff;
+                border-radius: 20px;
+                box-sizing: border-box;
+                transition: 0.3s;
+                cursor: pointer;
+                &:hover {
+                    transform: translate(0%,-10%) scale(1.1);
+                    box-shadow: 0 0 10px rgba(#000,0.5);
+                    background-color: #fff;
+                }
+                &:last-child {
+                    margin-right: 1%;
+                }
+                ol {
+                    width: 100%;
+                    text-align: left;
+                    display: inline-block;
+                    vertical-align: top;
+                    li {
+                        width: 100%;
+                        vertical-align: top;
+                        margin-bottom: 5% ;
+                        &.title {
+                            p {
+                                font-size: 0.85rem;
+                            }
+                        }
+                        .icon {
+                            display: inline-block;
+                            vertical-align: middle;
+                            width: 20%;
+                            margin-right: 5%;
+                            &.shake {
+                                animation-name: shake;
+                                animation-duration: 1.2s;
+                                animation-iteration-count: 1;
+                            }
+                        }
+                        p {
+                            display: inline-block;
+                            vertical-align: middle;
+                            width: 75%;
+                            font-size: 0.45rem;
+                            line-height: 0.75rem;
+                            span {
+                                font-size: 0.35rem;
+                            }
+                        }
+                    }
+                    &.education {
+                        .title {
+                            .icon {
+                                background: url(../img/education.png)no-repeat center;
+                                background-size: 100%;
+                                padding-bottom: 20%;
+                            }
+                        }
+                    }
+                    &.experienced {
+                        .title {
+                            .icon {
+                                background: url(../img/experience.png)no-repeat center;
+                                background-size: 100%;
+                                padding-bottom: 20%;
+                            }
+                        }
+                    }
+                    &.license {
+                        .title {
+                            .icon {
+                                background: url(../img/license.png)no-repeat center;
+                                background-size: 100%;
+                                padding-bottom: 20%;
+                            }
+                        }
+                    }
+                    &.interest {
+                        .title {
+                            .icon {
+                                background: url(../img/star.png)no-repeat center;
+                                background-size: 100%;
+                                padding-bottom: 20%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    }
+
+//---EXPERIENCE 結束---//
+
+
+
+

@@ -1,0 +1,28 @@
+@keyframes downarrow {
+	0% {transform:  translateY(-50%);}
+    25% {transform:  translateY(0%);}
+    50% {transform:  translateY(50%);}
+    75% {transform:  translateY(0%);}
+    100% {transform:  translateY(-50%);}
+}
+@keyframes action {
+    0% {transform:translate(20px) rotate(-5deg) scale(0.8);}
+    25% {transform:translate(20px) rotate(-5deg) scale(0.8);}
+    50% {transform:translate(20px) rotate(-5deg) scale(0.8);}
+    75% {transform:translate(20px) rotate(-5deg) scale(0.8);}
+    100% {transform:translate(20px) rotate(-5deg) scale(0.8);}
+}
+@keyframes action1 {
+    0% {transform:translate(20px) rotate(5deg) scale(0.8);}
+    25% {transform:translate(20px) rotate(5deg) scale(0.8);}
+    50% {transform:translate(20px) rotate(5deg) scale(0.8);}
+    75% {transform:translate(20px) rotate(5deg) scale(0.8);}
+    100% {transform:translate(20px) rotate(5deg) scale(0.8);}
+}
+@keyframes shake {
+    0% {transform: rotate(-20deg)scale(1);}
+    25% {transform: rotate(20deg)scale(1.2);}
+    50% {transform: rotate(-20deg)scale(1.2);}
+    75% {transform: rotate(20deg)scale(1.2);}
+    100% {transform: rotate(0deg)scale(1);}
+}
