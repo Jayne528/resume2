@@ -767,10 +767,16 @@ h4 {
         margin: 2% auto; }
       .experience .container ul > li ol {
         display: block; }
+        .experience .container ul > li ol li.title .icon {
+          margin: 0 7%; }
         .experience .container ul > li ol li.title p {
-          font-size: 3rem; }
+          font-size: 3rem;
+          width: 66%;
+          text-align-last: left; }
         .experience .container ul > li ol li p {
           font-size: 2.6rem;
-          line-height: 4rem; }
+          line-height: 4rem;
+          text-align: center;
+          width: 100%; }
           .experience .container ul > li ol li p span {
             font-size: 1.6rem; } }

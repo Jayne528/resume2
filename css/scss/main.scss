@@ -728,13 +728,20 @@ h4 {
                         display: block;
                         li {
                             &.title {
+                                .icon {
+                                    margin: 0 7%;
+                                }
                                 p {
                                     font-size: 3rem;
+                                    width: 66%;
+                                    text-align-last: left;
                                 }
                             }
                             p {
                                 font-size: 2.6rem;
                                 line-height: 4rem;
+                                text-align: center;
+                                width: 100%;
                                 span {
                                     font-size: 1.6rem;
                                 }
