@@ -12,13 +12,10 @@ header {
     height: 100vh;
     background: url(../img/Ocean.jpg)no-repeat center;
     background-size: cover;
-    position: relative;
-    top: 0;
     overflow: hidden;
     & h4 {
         font-size: 1.6rem;
         color: #fff;
-        width: 70%;
         text-align: center;
         transition: 2s;
         text-shadow: 5px 5px 10px #000;
@@ -289,7 +286,6 @@ h4 {
     ul {
         p {
             font-size: 1rem; 
-            width: 50%;
             display: inline-block;
             text-align: center;
         }
@@ -605,4 +601,151 @@ h4 {
 
 
 
-
+@media screen and (max-width:1000px) {
+    .container {
+        width: 100%;
+    }
+    //---header 開始---//
+    
+    header {
+        height: 100%;
+        & h4 {
+            font-size: 4rem;
+        }
+        .icon-a{
+            .icon {
+                width: 7%;
+                padding-bottom: 7%;
+            }
+        }
+        .downarrow{
+            margin: 5% auto 3% auto;
+        }
+    }
+    //---header 結束---//
+    
+    //---nav 開始---//
+    nav { 
+        .container {
+            width: 100%;
+            & .home {
+                width: 8%;
+                padding-bottom: 8%;
+            }
+            & .nav-menu {
+                width: 90%;
+                & li {
+                    width: 22%;
+                    padding: 4% 0;
+                    a {
+                        &:before {
+                        font-size: 1.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }   
+    //---nav 結束---//
+    
+    .person {
+        height: 100%;
+    }
+    h4 {
+        font-size: 4rem;
+    }
+    //---PORTFOLIO 開始---//
+    .portfolio {
+        .demo li {
+            width: 90%;
+            display: block;  
+            margin: 5% 5%;     
+        } 
+    }
+    //---PORTFOLIO 結束---// 
+    //---SKILLS 開始---//
+    .skill {
+        ul {
+            li {
+                width: 100%;
+                display: block;
+                p {
+                    font-size: 2.6rem; 
+                }
+                &.web_area {
+                    padding-bottom: 70%;
+                }
+                &.office_area {
+                    padding-bottom: 65%;
+                }
+            }
+        }
+    }
+    //---SKILLS 結束---//
+    //---profile 開始---//
+    .profile {
+        .capital {
+            width: 90%;
+            display: block;
+            margin: 1% 5%;
+            .imformation {
+                width: 65%;
+                text-align: center;
+                margin: 0 auto;
+                p {
+                    font-size: 2rem;
+                    margin: 4% 0;
+                }
+            }
+        }
+        .content {
+            width: 90%; 
+            display: block;
+            margin: 0 auto;
+            p {
+                font-size: 2.3rem;
+                line-height: 3.3rem;
+                span {
+                    font-size: 3.3rem;
+                }
+            }
+        }
+    }    
+    //---profile 結束---//
+    //---EXPERIENCE 開始---//
+    .experience {
+        .container {
+            width: 100%;
+            ul {
+                >li {
+                    width: 85%;
+                    display: block;
+                    margin: 2% auto;
+                    &:last-child {
+                        margin: 2% auto;
+                    }
+                    ol {
+                        display: block;
+                        li {
+                            &.title {
+                                p {
+                                    font-size: 3rem;
+                                }
+                            }
+                            p {
+                                font-size: 2.6rem;
+                                line-height: 4rem;
+                                span {
+                                    font-size: 1.6rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    //---EXPERIENCE 結束---//
+       
+}

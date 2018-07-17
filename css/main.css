@@ -181,13 +181,10 @@ header {
   height: 100vh;
   background: url(../img/Ocean.jpg) no-repeat center;
   background-size: cover;
-  position: relative;
-  top: 0;
   overflow: hidden; }
   header h4 {
     font-size: 1.6rem;
     color: #fff;
-    width: 70%;
     text-align: center;
     -webkit-transition: 2s;
     -o-transition: 2s;
@@ -425,7 +422,6 @@ h4 {
     padding-top: 63px; }
   .skill ul p {
     font-size: 1rem;
-    width: 50%;
     display: inline-block;
     text-align: center; }
   .skill ul li {
@@ -699,3 +695,82 @@ h4 {
             background: url(../img/star.png) no-repeat center;
             background-size: 100%;
             padding-bottom: 20%; }
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 100%; }
+  header {
+    height: 100%; }
+    header h4 {
+      font-size: 4rem; }
+    header .icon-a .icon {
+      width: 7%;
+      padding-bottom: 7%; }
+    header .downarrow {
+      margin: 5% auto 3% auto; }
+  nav .container {
+    width: 100%; }
+    nav .container .home {
+      width: 8%;
+      padding-bottom: 8%; }
+    nav .container .nav-menu {
+      width: 90%; }
+      nav .container .nav-menu li {
+        width: 22%;
+        padding: 4% 0; }
+        nav .container .nav-menu li a:before {
+          font-size: 1.8rem; }
+  .person {
+    height: 100%; }
+  h4 {
+    font-size: 4rem; }
+  .portfolio .demo li {
+    width: 90%;
+    display: block;
+    margin: 5% 5%; }
+  .skill ul li {
+    width: 100%;
+    display: block; }
+    .skill ul li p {
+      font-size: 2.6rem; }
+    .skill ul li.web_area {
+      padding-bottom: 70%; }
+    .skill ul li.office_area {
+      padding-bottom: 65%; }
+  .profile .capital {
+    width: 90%;
+    display: block;
+    margin: 1% 5%; }
+    .profile .capital .imformation {
+      width: 65%;
+      text-align: center;
+      margin: 0 auto; }
+      .profile .capital .imformation p {
+        font-size: 2rem;
+        margin: 4% 0; }
+  .profile .content {
+    width: 90%;
+    display: block;
+    margin: 0 auto; }
+    .profile .content p {
+      font-size: 2.3rem;
+      line-height: 3.3rem; }
+      .profile .content p span {
+        font-size: 3.3rem; }
+  .experience .container {
+    width: 100%; }
+    .experience .container ul > li {
+      width: 85%;
+      display: block;
+      margin: 2% auto; }
+      .experience .container ul > li:last-child {
+        margin: 2% auto; }
+      .experience .container ul > li ol {
+        display: block; }
+        .experience .container ul > li ol li.title p {
+          font-size: 3rem; }
+        .experience .container ul > li ol li p {
+          font-size: 2.6rem;
+          line-height: 4rem; }
+          .experience .container ul > li ol li p span {
+            font-size: 1.6rem; } }
