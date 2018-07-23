@@ -415,6 +415,12 @@ h4 {
       background-size: 100%; }
     .portfolio .demo li.demo6:after {
       content: '扭蛋 DEMO'; }
+    .portfolio .demo li.demo7 a {
+      background: url(../img/7.png) no-repeat center;
+      background-size: 100%; }
+    .portfolio .demo li.demo7:after {
+      content: '小小兵互動';
+      color: #1f1f1f; }
 
 .skill {
   background: #F2F2F2; }
