@@ -284,6 +284,15 @@ h4 {
                 color: #1f1f1f;
             }
         }
+        &.demo8 {
+            a{
+                background: url(../img/8.png)no-repeat center;
+                background-size: 100%;
+            }
+            &:after {
+                content: '時鐘效果';
+            }
+        }
     } 
 }
 //---PORTFOLIO 結束---// 

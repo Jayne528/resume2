@@ -421,6 +421,11 @@ h4 {
     .portfolio .demo li.demo7:after {
       content: '小小兵互動';
       color: #1f1f1f; }
+    .portfolio .demo li.demo8 a {
+      background: url(../img/8.png) no-repeat center;
+      background-size: 100%; }
+    .portfolio .demo li.demo8:after {
+      content: '時鐘效果'; }
 
 .skill {
   background: #F2F2F2; }
